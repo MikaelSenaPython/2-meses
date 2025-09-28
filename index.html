@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Meses de Amor ❤️ Para Beatriz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a0a0a;
+      --secondary: #1a1a1a;
+      --accent: #ff0040;
+      --accent-light: #ff4d6d;
+      --gold: #ffd700;
+      --silver: #c0c0c0;
+      --white: #fff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      min-height: 100vh;
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin: 40px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(45deg, var(--accent), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      color: var(--silver);
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .love-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+    }
+    .love-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--gold);
+    }
+    .love-card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--silver);
+    }
+
+    button {
+      background: linear-gradient(45deg, var(--accent), var(--accent-light));
+      border: none;
+      color: var(--white);
+      padding: 15px 30px;
+      margin: 20px 0;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent);
+    }
+
+    .special-message {
+      display: none;
+      margin-top: 20px;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .special-message h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--accent-light);
+    }
+    .special-message p {
+      font-size: 1rem;
+      color: var(--silver);
+      line-height: 1.5;
+    }
+
+    .timeline {
+      margin: 40px 0;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(var(--accent), var(--gold));
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: flex-start;
+      margin: 30px 0;
+      position: relative;
+    }
+    .timeline-item:nth-child(odd) { justify-content: flex-end; }
+    .timeline-content {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 400px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .timeline-date {
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin: 40px 0;
+    }
+    .photo-frame {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.2s ease;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta sem distorcer */
+      border-radius: 10px;
+    }
+    .photo-frame:hover { transform: scale(1.05); }
+    .photo-frame small {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.8rem;
+      color: var(--silver);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--silver);
+      font-size: 1rem;
+    }
+    footer span { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .love-card { padding: 20px; }
+      .timeline::before { left: 10px; }
+      .timeline-item { flex-direction: column; align-items: flex-start; }
+      .timeline-content { margin-left: 30px; max-width: 100%; }
+    }
+    @media (max-width: 768px) {
+      .photo-gallery {
+        grid-template-columns: 1fr; /* Apenas 1 coluna no celular */
+      }
+
+      .photo-frame img {
+        height: auto; /* Mantém proporção natural */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Para Minha Beatriz ❤️</h1>
+      <p>Celebrando nossos <span style="color:var(--gold);">2 meses</span> de amor</p>
+    </header>
+
+    <main class="love-card">
+      <h2>2 Meses de Felicidade 💕</h2>
+      <p>Beatriz, meu amor... Podem ser apenas 2 meses, mas cada dia ao seu lado é uma eternidade de felicidade. Obrigado por ser minha pessoa favorita. Te amo cada vez mais! ❤️</p>
+      <button onclick="mostrarSurpresa()">✨ Uma Surpresa Para Você ✨</button>
+      <div class="special-message" id="surpresa">
+        <h3>💖 Do Fundo Do Meu Coração 💖</h3>
+        <p>Você é o presente mais lindo que a vida me deu. Obrigado por ser minha companheira de aventuras e meu grande amor. Que venham muitos meses juntos! 💝</p>
+      </div>
+    </main>
+
+    <section class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">Mês 1</div>
+          <p>O começo de tudo... risadas, conversas, momentos que mostraram o quanto você é especial.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">Mês 2</div>
+          <p>Dois meses de amor, cumplicidade e felicidade. Você fez minha vida mais colorida e meu coração mais completo.</p>
+        </div>
+      </div>
+    </section>
+
+<<<<<<< HEAD
+    <section class="photo-gallery">
+      <div class="photo-frame">
+        <img src="imagens/1.jpg" alt="Nossa primeira foto">
+        <small>Nossa primeira foto</small>
+      </div>
+      <div class="photo-frame">
+        <img src="imagens/2.jpg" alt="Nosso encontro especial">
+        <small>Nosso encontro especial</small>
+      </div>
+      <div class="photo-frame">
+        <img src="imagens/3.jpg" alt="Para sempre nós">
+        <small>Para sempre nós</small>
+      </div>
+    </section>
+=======
+        <button onclick="showSurprise()">Clique Aqui!</button>
+        <p class="hidden-message" id="secretMessage"> 1 Coríntios 13:7 Tudo sofre, tudo crê, tudo espera, tudo suporta.   </p>
+    </div>
+>>>>>>> ef875c1f8458a2c798df74aa2a71bf25cfed9445
+
+    <footer>
+      <p>Criado com muito <span>❤️</span> para a Beatriz mais especial do mundo!</p>
+      <p>Felizes 2 meses, meu amor! 💑</p>
+    </footer>
+  </div>
+
+  <script>
+    function mostrarSurpresa() {
+      document.getElementById('surpresa').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
